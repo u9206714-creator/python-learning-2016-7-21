@@ -59,17 +59,20 @@ class Student:
         if course in self.grades:
             self.grades[course] = grade
 
+    def print_grades(self):
+        print(f'{self.name}(number:{self.number}) test scores:')
+        for course in self.grades:
+            print(f'{course}:{self.grades[course]}')
 
-
-
-
-
-
+ 
 stu1 = Student('Jack','01',)
-stu2 = Student('Alice','02')
-
-print(stu1.name)
-print(stu2.grades)
+stu1.set_grade('chinese',95)
+stu1.set_grade('maths',94)
+stu1.print_grades()
+#stu2 = Student('Alice','02')
+#print(stu1.name)
+#stu2.set_grade('maths',95)
+#print(stu2.grades)
 
  
 
