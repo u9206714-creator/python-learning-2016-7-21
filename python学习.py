@@ -36,6 +36,7 @@ print(atm1.number)
 
 #四、学习class语法
 #1、类定义属性
+'''
 class CuteCat:
     def __init__(self,cat_name,cat_age,cat_color):
         self.name = cat_name
@@ -43,6 +44,38 @@ class CuteCat:
         self.color = cat_color
 
 cat1 = CuteCat('jojo',2,'orange')
+'''
+
+#2、类定义方法 -> 调用类方法：对象.方法名 ; 在class中定义函数
+
+#practice
+class Student:
+    def __init__(self,name,student_id):
+        self.name = name
+        self.number = student_id
+        self.grades = {'chinese':0,'maths':0,'english':0}
+
+    def set_grade(self,course,grade):
+        if course in self.grades:
+            self.grades[course] = grade
+
+
+
+
+
+
+
+stu1 = Student('Jack','01',)
+stu2 = Student('Alice','02')
+
+print(stu1.name)
+print(stu2.grades)
+
+ 
+
+
+
+
 
 
 
