@@ -46,11 +46,10 @@ class CuteCat:
 cat1 = CuteCat('jojo',2,'orange')
 '''
 
-#2、类定义方法 -> 调用类方法：对象.方法名 ; 在class中定义函数
+#2、类定义方法 -> 调用类方法：对象.方法名() ; 在class中定义函数
 
 #practice
-#1、
-'''
+
 class Student:
     def __init__(self,name,student_id):
         self.name = name
@@ -69,10 +68,23 @@ class Student:
             return self.grades[course]
         else:
             return 'None such course!'
+    def average_grade(self):
+        total = 0
+        for course in self.grades:
+            total += self.grades[course]
+        return total / len(self.grades)
+stu1 = Student('Jack','01') 
+stu1.set_grade('chinese',95)
+stu1.set_grade('maths',97)
+stu1.set_grade('english',98)
+print(stu1.average_grade())
 
-stu1 = Student('Jack','01')
-stu1.set_grade('english',88)
-print(stu1.get_grade('english'))
+
+
+#1、
+#stu1 = Student('Jack','01')
+#stu1.set_grade('english',88)
+#print(stu1.get_grade('english'))
  
 #stu1 = Student('Jack','01',)
 #stu1.set_grade('chinese',95)
@@ -82,9 +94,29 @@ print(stu1.get_grade('english'))
 #print(stu1.name)
 #stu2.set_grade('maths',95)
 #print(stu2.grades)
-'''
+
  
-#2、
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
