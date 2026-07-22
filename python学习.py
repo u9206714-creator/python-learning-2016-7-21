@@ -92,17 +92,12 @@ class Student:
         course, score = self.highest_grade()
         print(f"Highest : {course} ({score})")
 
+#4、
 stu1 = Student("Jack","01")
-stu1.set_grade("Chinese",95)
-stu1.set_grade("Maths",94)
-stu1.set_grade("English",88)
+stu1.set_grade("chinese",95)
+stu1.set_grade("maths",94)
+stu1.set_grade("english",88)
 stu1.print_result()
-
-
-
-
-
-
 
 
 #3、
